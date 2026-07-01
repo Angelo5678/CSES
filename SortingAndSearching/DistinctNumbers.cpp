@@ -1,22 +1,19 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-typedef vector<long long> vll;
-typedef vector<int> vi;
-typedef vector<char> vch;
-typedef deque<char> dch;
-typedef vector<string> vs;
-typedef pair<int, int> ii;
-typedef vector<ii> vii;
-typedef priority_queue <ii, vector<ii>, greater<ii>> pq_min;
-#define ll long long
+#define int long long
 #define sz(v) (int)v.size()
 #define PB push_back
 #define PP pop_back
 
+typedef vector<int> vi;
+typedef pair<int, int> ii;
+typedef vector<ii> vii;
+typedef priority_queue <ii, vector<ii>, greater<ii>> pq_min;
+
 vi vals;
 
-int main(){
+signed main(){
     int n, v;
     cin >> n;
     for (int i = 0; i < n; i++){
