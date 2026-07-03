@@ -19,13 +19,13 @@ signed main(){
     for (int i = 0; i < n; i++){
         int str, fns;
         cin >> str >> fns;
-        movies.PB({str, fns});
+        movies.PB({fns, str});
     }
     sort(movies.begin(), movies.end());
     int res = 0,  last = 0;
     for (int i = 0; i < n; i++){
-        if (last <= movies[i].first){
-            last = movies[i].second;
+        if (last <= movies[i].second){
+            last = movies[i].first;
             res++;
         }
     }
