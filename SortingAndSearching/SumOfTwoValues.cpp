@@ -24,8 +24,7 @@ signed main(){
     sort(nums.begin(), nums.end());
     int i = 0, j = n - 1;
     bool found = false;
-    while (i < n && j >= 0){
-        if (i == j) continue;
+    while (i < j){
         if ((nums[i].first + nums[j].first) == x){
             cout << nums[i].second << ' ' << nums[j].second;
             found = true;
