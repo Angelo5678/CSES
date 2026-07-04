@@ -23,13 +23,14 @@ signed main(){
     }
     int sum = arr[0], mx = arr[0];
     for (int i = 1; i < n; i++){
+        mx = max(mx, sum);
         if (sum + arr[i] > arr[i]){
             sum += arr[i];
-            mx = max(mx, sum);
         }
         else {
             sum = arr[i];
         }
     }
+    mx = max(sum, mx);
     cout << mx;
 }
