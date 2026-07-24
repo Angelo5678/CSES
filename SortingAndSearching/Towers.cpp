@@ -14,7 +14,7 @@ typedef priority_queue <ii, vector<ii>, greater<ii>> pq_min;
 multiset<int> blocks;
 
 signed main(){
-    int n, val, res = 0;;
+    int n, val, res = 0;
     cin >> n;
     for (int i = 0; i < n; i++){
         cin >> val;
